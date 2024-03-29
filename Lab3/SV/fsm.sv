@@ -7,7 +7,7 @@ module FSM (clk, reset, L, R, y);
    
    output logic y;
 
-   typedef enum 	logic [1:0] {S0, S1, S2} statetype;
+   typedef enum 	logic [5:0] {S0, S1, S2, S3, S4, S5, S6, S7, S8, S9} statetype;
    statetype state, nextstate;
    
    // state register
@@ -20,67 +20,62 @@ module FSM (clk, reset, L, R, y);
      case (state)
        S0: begin
 	  y <= 6'b000_000;	  
-	  if (R) nextstate <= S4;
-    else if (L&&R) nextstate <= S7;
-	  else   nextstate <= S1;
+	  if (L&&R) nextstate <= S7;
+    else if (L) nextstate <= S1;
+    else if (R) nextstate <= S4;
+	  else   nextstate <= S0;
        end
 
     //Left Turn Signal     
        S1: begin
-	  y <= 6'b001_000;	  	  
-	  if (R) nextstate <= S2;
-    else if (L)
-    else if(L&&R)
-	  else   nextstate <= S2;
+	  y <= 6'b001_000;
+    nextstate <= S2;
        end
+
        S2: begin
 	  y <= 6'b011_000;	  	  
-	  if (a) nextstate <= S2;
-	  else   nextstate <= S3;
-       end 	  
-	  nextstate <= S0;
+    nextstate <= S3;
+       end 	
+
         S3: begin
-	  y <= 6'b111_000;	  	  
-	  if (a) nextstate <= S2;
-    if(L) nextstate <= 
-	  else   nextstate <= S0;
+	  y <= 6'b111_000;
+    nextstate <= S0;
        end
     
+
     //Right Turn Signal
         S4: begin
-	  y <= 6'b000_100;	  	  
-	  if (a) nextstate <= S2;
-	  else   nextstate <= S5;
+	  y <= 6'b000_100;
+    nextstate <= S5;
        end
+
         S5: begin
-	  y <= 6'b000_110;	  	  
-	  if (a) nextstate <= S2;
-	  else   nextstate <= S6;
+	  y <= 6'b000_110;
+    nextstate <= S6;
        end
+
         S6: begin
-	  y <= 6'b011_111;	  	  
-	  if (a) nextstate <= S2;
-	  else   nextstate <= S7;
+	  y <= 6'b000_111;
+    nextstate <= S0;
        end
 
     //Hazard Signals
         S7: begin
-	  y <= 6'b001_100;	  	  
-	  if (a) nextstate <= S2;
-	  else   nextstate <= S8;
+	  y <= 6'b001_100;
+    nextstate <= S8;
        end
+
         S8: begin
-	  y <= 6'b011_110;	  	  
-	  if (a) nextstate <= S2;
-	  else   nextstate <= S9;
+	  y <= 6'b011_110;
+    nextstate <= S9;
        end
         S9: begin
-	  y <= 6'b111_111;	  	  
-	  if (a) nextstate <= S2;
-	  else   nextstate <= S0;
+	  y <= 6'b111_111;
+    nextstate <= S0;
        end
+
        default: begin
-	  y <= 6'000_000;
+	  y <= 6'b000_000;
        end	 
        
      endcase
