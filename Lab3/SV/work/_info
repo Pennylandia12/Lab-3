@@ -1,6 +1,8 @@
 m255
 K4
 z2
+!s99 nomlopt
+!s11f MIXED_VERSIONS
 13
 !s112 1.1
 !i10d 8192
@@ -11,59 +13,69 @@ Z0 dC:/Users/isaia/Downloads/Lab-3/Lab3/SV
 T_opt
 !s110 1712334968
 VcGJ2J<8]Q=CZ=TOzJE]nQ1
-04 8 4 work stimulus fast 0
+Z1 04 8 4 work stimulus fast 0
 =1-dc4628ea98a4-66102878-2cb-236c
-o-quiet -auto_acc_if_foreign -work work +acc
-Z1 tCvgOpt 0
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
 n@_opt
 OL;O;10.7f;67
 R0
-vFSM
-Z2 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
-Z3 !s110 1712335048
-!i10b 1
-!s100 Nb4azLY0biG2CnhI5k=lc2
-IOdBB=LV7_1U7TL_6mTl9<1
-Z4 VDg1SIo80bB@j0V0VzS_@n1
-!s105 fsm_sv_unit
-S1
-R0
-w1712182531
-8fsm.sv
-Ffsm.sv
-L0 1
-Z5 OL;L;10.7f;67
-r1
-!s85 0
-31
-Z6 !s108 1712335048.000000
-!s107 fsm_tb.sv|fsm.sv|
-Z7 !s90 -reportprogress|300|fsm.sv|fsm_tb.sv|
-!i113 0
-Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+T_opt1
+!s110 1712335770
+VBWl[72Am=o`IMVkCO=O5z0
 R1
-n@f@s@m
-vstimulus
+=1-00be43904fc6-66102b9a-103-4c4c
+!s124 OEM100
 R2
 R3
+n@_opt1
+OL;O;2021.3;73
+vFSM
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z5 !s110 1712335769
 !i10b 1
-!s100 cP_ZkWXdoZZ2=2kb4ZGc<1
-Iae_:[ek90iBmdOif_88Ua3
-R4
-!s105 fsm_tb_sv_unit
+!s100 F:aE_L]L[Ekf27DeaGFJS0
+I_adAj6To4@WG]8SNSQaaG0
 S1
-R0
-w1712334878
-8fsm_tb.sv
-Ffsm_tb.sv
-L0 2
-R5
+Z6 dC:/Users/kdoolab/Documents/Lab-3/Lab3/SV
+Z7 w1712335726
+8fsm.sv
+Ffsm.sv
+!i122 0
+L0 1 83
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2021.3;73
 r1
 !s85 0
 31
-R6
-Z9 !s107 fsm_tb.sv|fsm.sv|
-R7
+Z10 !s108 1712335769.000000
+Z11 !s107 fsm_tb.sv|fsm.sv|
+Z12 !s90 -reportprogress|300|fsm.sv|fsm_tb.sv|
 !i113 0
+Z13 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+n@f@s@m
+vstimulus
+R4
+R5
+!i10b 1
+!s100 Wlz5dPlhjKcl?d_<YnJME3
+Iz7goLC_>`i^KA_@5m6>2X0
+S1
+R6
+R7
+8fsm_tb.sv
+Ffsm_tb.sv
+!i122 0
+L0 2 56
 R8
-R1
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R3
