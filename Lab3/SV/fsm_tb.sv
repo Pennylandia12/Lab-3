@@ -38,13 +38,20 @@ module stimulus ();
    
    initial 
      begin      
-	#0   reset = 1'b0;
-	#0   L = 1'b0;
-     #0 R = 1'b0;
-	#20  L = 1'b1;
-     #0 R = 1'b1;
-	#20  L = 1'b0;
-	#0  reset = 1'b1;	
+
+     #0 reset = 1'b1; #5 reset = 1'b0;
+     #0 L = 1'b0; R = 1'b0;
+     #10 L = 1'b1; R = 1'b0;
+     #10 L = 1'b0;
+     #20;
+     #10 R = 1'b1; L = 1'b0;
+     #10 R = 1'b0; 
+     #20;
+     #10 L = 1'b1; R = 1'b1;
+     #10 L = 1'b0; R = 1'b0; 
+     #30;
+  
+		
      end
 
 endmodule // FSM_tb
