@@ -56,3 +56,5 @@ do fsm.do
 # Loading sv_std.std
 # Loading work.stimulus(fast)
 # Loading work.FSM(fast)
+# .main_pane.list.interior.cs.body
+# .main_pane.wave.interior.cs.body.pw.wf
