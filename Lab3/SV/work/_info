@@ -9,17 +9,18 @@ z2
 cModel Technology
 Z0 dC:/Users/isaia/Downloads/Lab-3/Lab3/SV
 T_opt
-!s110 1712334729
-V65jQZ9kczOmB>3M1^AAif0
+!s110 1712334968
+VcGJ2J<8]Q=CZ=TOzJE]nQ1
 04 8 4 work stimulus fast 0
-=1-dc4628ea98a4-66102789-70-bffc
+=1-dc4628ea98a4-66102878-2cb-236c
 o-quiet -auto_acc_if_foreign -work work +acc
 Z1 tCvgOpt 0
 n@_opt
 OL;O;10.7f;67
+R0
 vFSM
 Z2 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
-Z3 !s110 1712334727
+Z3 !s110 1712335048
 !i10b 1
 !s100 Nb4azLY0biG2CnhI5k=lc2
 IOdBB=LV7_1U7TL_6mTl9<1
@@ -35,24 +36,24 @@ Z5 OL;L;10.7f;67
 r1
 !s85 0
 31
-Z6 !s108 1712334727.000000
-Z7 !s107 fsm_tb.sv|fsm.sv|
-Z8 !s90 -reportprogress|300|fsm.sv|fsm_tb.sv|
+Z6 !s108 1712335048.000000
+!s107 fsm_tb.sv|fsm.sv|
+Z7 !s90 -reportprogress|300|fsm.sv|fsm_tb.sv|
 !i113 0
-Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 n@f@s@m
 vstimulus
 R2
 R3
 !i10b 1
-!s100 eo=ARYK7?8OK?WBzoY3lU1
-IL?O]6PncFL6Y@J<7VYLU<1
+!s100 cP_ZkWXdoZZ2=2kb4ZGc<1
+Iae_:[ek90iBmdOif_88Ua3
 R4
 !s105 fsm_tb_sv_unit
 S1
 R0
-w1712334721
+w1712334878
 8fsm_tb.sv
 Ffsm_tb.sv
 L0 2
@@ -61,8 +62,8 @@ r1
 !s85 0
 31
 R6
+Z9 !s107 fsm_tb.sv|fsm.sv|
 R7
-R8
 !i113 0
-R9
+R8
 R1
